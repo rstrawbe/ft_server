@@ -2,7 +2,7 @@ cd /var/www/
 tar -xzf wordpress_v5.tar.gz -C localhost
 chown -R www-data /var/www/* && chmod -R 755 /var/www/*
 
-if [[ "$AUTOINDEX" != "on" && "$AUTOINDEX" != "off" ]]
+if [[ "$AUTOINDEX" != "off" ]]
 then
   export AUTOINDEX="on"
 fi
